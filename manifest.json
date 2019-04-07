@@ -9,13 +9,8 @@
             "src": "content/images/bulb192.png",
             "sizes": "192x192",
             "type": "image/png"
-        }
-        ,
-        {
-            "src": "content/images/bulb144.png",
-            "sizes": "144x144",
-            "type": "image/png"
         },
+       
         {
             "src": "content/images/bulb256.png",
             "sizes": "256x256",
@@ -26,6 +21,6 @@
     "display": "standalone",
     "scope" : "/",
     "background_color": "#121738",
-    "theme_color": "#fff",
+    "theme_color": "#333333",
     "orientation" : "all"
 }
