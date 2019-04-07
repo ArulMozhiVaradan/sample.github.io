@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="manifest" href="manifest.json">
+    <link href="content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="content/fontAwesome/css/all.css" rel="stylesheet" />
+    <title>Meter Reading</title>
+</head>
+
+<body class="bg-light">
+    <div class="d-flex" id="wrapper">
+        
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar_content scrollStyle">
+                <div class="sidebar-heading">
+                    <div class="input-group">
+                        <input type="text" class="form-control" class="form-control" placeholder="Search ConsumerNo" aria-label="Search ConsumerNo"
+                        />
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-primary" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group list-group-flush" id="consumerList">
+                   
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div id="onlineStatus">You are online</div>
+            <div id="offlineStatus">You are online</div>
+            <div class="networkStatus" id="networkStatus"></div>
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light navbar_style">
+                <nav class="navbar navbar-light" style="padding:0px; color:white;">
+                    <a class="navbar-brand" href="#">
+                        <button class="btn btn-outline-light" id="menu-toggle">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <img src="content/images/light-bulb-122x122.png" width="30" height="30" class="d-inline-block align-top" alt="Electricity Department"> Electricity Department
+                    </a>
+                </nav>
+            </nav>
+
+            <!-- /.navbar -->
+
+            <!-- Content Container -->
+            <div class="container-fluid content_container">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 header_info">
+                            <div class="row consumer_info_row1">
+                                <div class="col-sm-4 header_month">June-2018</div>
+                                <div class="col-sm-4 header_consumerNo">40-91-01-0069B</div>
+                                <div class="col-sm-4 header_pageof">3/250</div>
+                            </div>
+                            <div class="row consumer_info_row2">
+                                <div class="col-sm-12 header_userName">Ram Kumar.R</div>
+                                <div class="col-sm-12">D-10, Middle Street, Kombakkam, Puducherry - 605110</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row meter_reading_row">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-6 meter_reading_left">
+                                    <div class="row justify-content-center meterNo_row">
+                                        <div class="col-6 meterNo_header">
+                                            <div class="row" style="margin-left:5px;">
+                                                <div class="col-6" style="padding:0px;">
+                                                    <button class="mrBtn btn_dc">
+                                                        <i class="fa fa-door-closed"></i> DC</button>
+                                                </div>
+                                                <div class="col-6" style="padding:0px;">
+                                                    <button class="mrBtn btn_dl">
+                                                        <i class="fa fa-lock"></i> DL</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 meterNo_header">
+                                            Meter-1
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 meter_info">
+                                            <div class="row">MS</div>
+                                            <div class="row">Current Reading</div>
+                                            <div class="row">Previous Reading</div>
+                                            <div class="row">Unites Consumed</div>
+                                        </div>
+                                        <div class="col-6 meter_value">
+                                            <div class="row">
+                                                <label class="checkbox_container">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="row">
+                                                <input type="text" class="form-control txt_meterReading" />
+                                            </div>
+                                            <div class="row">3461</div>
+                                            <div class="row">500</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 meter_reading_right">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="row justify-content-center meterNo_row">
+                                                <div class="col-6 meterNo_header mobile_view_hdn_header">
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 meterNo_header">
+                                                    Meter-2
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 meter_info mobile_view_hdn_header">
+                                                    <div class="row">MS</div>
+                                                    <div class="row">Current Reading</div>
+                                                    <div class="row">Previous Reading</div>
+                                                    <div class="row">Unites Consumed</div>
+                                                </div>
+                                                <div class="col-6 col-sm-12 meter_value">
+                                                    <div class="row">
+                                                        <label class="checkbox_container">
+                                                            <input type="checkbox" />
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="row">
+                                                        <input type="text" class="form-control txt_meterReading" />
+                                                    </div>
+                                                    <div class="row">3461</div>
+                                                    <div class="row">500</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row justify-content-center meterNo_row">
+                                                <div class="col-6 meterNo_header mobile_view_hdn_header">
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 meterNo_header">
+                                                    Meter-2
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 meter_info mobile_view_hdn_header">
+                                                    <div class="row">MS</div>
+                                                    <div class="row">Current Reading</div>
+                                                    <div class="row">Previous Reading</div>
+                                                    <div class="row">Unites Consumed</div>
+                                                </div>
+                                                <div class="col-6 col-sm-12 meter_value">
+                                                    <div class="row">
+                                                        <label class="checkbox_container">
+                                                            <input type="checkbox" />
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="row">
+                                                        <input type="text" class="form-control txt_meterReading" />
+                                                    </div>
+                                                    <div class="row">3461</div>
+                                                    <div class="row">500</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row meter_reading_bottom">
+                                <div class="col-sm-6 bottom_date">
+                                    <div class="row align-items-center">
+                                        <div class="col-6 meter_bold_header">Bill Date:</div>
+                                        <div class="col-6 bill_date">19/07/2018</div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-6 meter_bold_header">Due Date:</div>
+                                        <div class="col-6 due_date">19/07/2018</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 bottom_total">
+                                    <div class="row align-items-center">
+                                        <div class="col-6 col-sm-8 meter_bold_header">Sub Total:</div>
+                                        <div class="col-6 col-sm-4 sub_total">50</div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-6 col-sm-8 meter_bold_header">Current Month:</div>
+                                        <div class="col-6 col-sm-4 sub_total">1000</div>
+                                    </div>
+                                    <div class="row align-items-center total_value_row">
+                                        <div class="col-6 col-sm-8 meter_bold_header">Total Demand:</div>
+                                        <div class="col-6 col-sm-4 sub_total">1500</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row meter_submit_row">
+                        <div class="col-6 col-sm-6">
+                            <button class="mrBtn btn_skip bg-info">
+                                <i class="fa fa-arrow-circle-right"></i> Skip</button>
+                        </div>
+                        <div class="col-6 col-sm-6" style="text-align:right;">
+                            <button class="mrBtn btn_save bg-success">
+                                <i class="fa fa-save"></i> Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.content_container-->
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+    <script src="content/jquery/jquery.min.js"></script>
+    <script src="content/bootstrap/js/bootstrap.min.js"></script>
+    <script src="script/app.js"></script>
+    <script type="text/javascript">
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+
+</html>

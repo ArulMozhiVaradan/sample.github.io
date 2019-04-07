@@ -1,0 +1,31 @@
+{
+    "lang" : "en",
+    "manifest_version": 1,
+    "version": "1.0.0",
+    "name": "Meter Reading",
+    "short_name": "MeterReading",
+    "icons": [
+        {
+            "src": "content/images/bulb192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+        ,
+        {
+            "src": "content/images/bulb144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "content/images/bulb256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "scope" : "/",
+    "background_color": "#121738",
+    "theme_color": "#fff",
+    "orientation" : "natural"
+}
