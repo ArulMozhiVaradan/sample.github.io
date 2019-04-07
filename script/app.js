@@ -4,7 +4,7 @@ const networkStatus = document.getElementById('networkStatus');
         console.log('ok');
         window.addEventListener('load', () => {
             navigator.serviceWorker
-                .register('../sw.js')
+                .register('./sw.js')
                 .then(() => console.log('service worker registed'))
                 .catch(err => console.log(`service worker error: ${err}`));
         });
