@@ -1,8 +1,5 @@
 const networkStatus = document.getElementById('networkStatus');
-window.addEventListener('load', e => {
-    checkNetworkStatus();
-    loadConsumerList();
-    //Registering Service Worker
+//Registering Service Worker
     if ('serviceWorker' in navigator) {
         console.log('ok');
         window.addEventListener('load', () => {
@@ -12,6 +9,11 @@ window.addEventListener('load', e => {
                 .catch(err => console.log(`service worker error: ${err}`));
         });
     }
+
+window.addEventListener('load', e => {
+    checkNetworkStatus();
+    loadConsumerList();
+    
 
 });
 
