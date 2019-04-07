@@ -27,5 +27,5 @@
     "scope" : "/",
     "background_color": "#121738",
     "theme_color": "#fff",
-    "orientation" : "natural"
+    "orientation" : "all"
 }
